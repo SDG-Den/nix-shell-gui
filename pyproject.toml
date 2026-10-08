@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nix-shell-gui"
+version = "0.1.0"
+description = "GTK app store for temporarily launching nixpkgs packages via nix run / nix shell"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+nix-shell-gui = "nix_shell_gui.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
