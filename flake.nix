@@ -52,6 +52,11 @@
             python.pkgs.pygobject3
           ];
 
+          postInstall = ''
+            install -Dm644 ${./nix-shell-gui.desktop} \
+              "$out/share/applications/nix-shell-gui.desktop"
+          '';
+
           preFixupPhases = [ "collectGiPaths" ];
 
           collectGiPaths = ''

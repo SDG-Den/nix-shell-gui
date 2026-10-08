@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Nix Shell GUI
+Comment=GTK app store for temporarily launching nixpkgs packages via nix run / nix shell
+Exec=nix-shell-gui
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;System;
+Keywords=nix;package;store;nixpkgs;
